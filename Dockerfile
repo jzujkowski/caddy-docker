@@ -3,7 +3,7 @@ MAINTAINER Adriel Kloppenburg
 
 LABEL caddy_version="1.0.0" architecture="amd64"
 
-ARG plugins=http.ipfilter,tls.dns.cloudflare
+ARG plugins=http.ipfilter,http.prometheus,tls.dns.cloudflare
 
 RUN apk add --no-cache git tar curl
 
