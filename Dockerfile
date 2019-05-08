@@ -14,7 +14,7 @@ RUN curl --silent --show-error --fail --location \
  && chmod 0755 /usr/bin/caddy \
  && /usr/bin/caddy -version
 
-EXPOSE 80 443 2015
+EXPOSE 80 443 9180
 VOLUME /root/.caddy /srv
 WORKDIR /srv
 
